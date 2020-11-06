@@ -7,6 +7,7 @@ RUN apt-get update && \
   apt-get install -y \
     net-tools \
     tree \
+    maven \
     vim && \
   rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
 
