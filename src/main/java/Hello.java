@@ -21,6 +21,10 @@ public class Hello extends HttpServlet {
 
       // Actual logic goes here.
       PrintWriter out = response.getWriter();
+      if( request.getParameter("name") != null )
+      {
+         message = "Hello " + request.getParameter("name");
+      }
       out.println("<h1>" + message + "</h1>");
    }
 }
