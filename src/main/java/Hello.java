@@ -10,7 +10,7 @@ public class Hello extends HttpServlet {
 
    public void init() throws ServletException {
       // Do required initialization
-      message = "Hello World: src/main/java/Hello.java";
+      message = "Hello World: This is Deployment B";
    }
 
    public void doGet(HttpServletRequest request, HttpServletResponse response)
